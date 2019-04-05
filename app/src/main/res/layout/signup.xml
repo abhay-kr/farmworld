@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#fff"
+    android:layout_width="300dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:text="Sign up to farmworld"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/txtRegUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Email">
+
+        <requestFocus>
+
+        </requestFocus>
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"></EditText>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:text="Register"
+            android:textColor="#3CB371">
+
+        </Button>
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#3CB371"
+            android:background="@drawable/border"
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="15dp"
+            android:text="Cancel"></Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAlreadyUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Already User?" />
+</LinearLayout>
